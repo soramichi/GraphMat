@@ -51,7 +51,7 @@ apps = $(patsubst $(SRCDIR)/%.cpp, $(BINDIR)/%, $(sources))
 all: $(apps)
 	
 $(BINDIR)/% : $(SRCDIR)/%.cpp $(deps)  
-	$(MPICXX) -cxx=$(CXX) $(CXX_OPTIONS) -o $@ $< $(LD_OPTIONS)
+	$(MPICXX) $(CXX_OPTIONS) -o $@ $< $(LD_OPTIONS)
 
 # --- Test --- #
 test: $(TESTBINDIR)/test 

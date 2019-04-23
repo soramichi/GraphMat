@@ -42,6 +42,8 @@
 #include <sstream>
 #include <cstdio>
 
+#include <x86intrin.h>
+
 inline double get_compression_threshold();
 
 enum compression_decision

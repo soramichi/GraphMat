@@ -38,6 +38,7 @@
 
 #include "GMDP/utils/binary_search.h"
 
+#include <mm_malloc.h>
 
 template <typename T>
 bool compare_tile_id(const tedge_t<T>& a, const tedge_t<T>& b) {

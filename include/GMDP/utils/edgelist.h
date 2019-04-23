@@ -35,6 +35,8 @@
 
 #include <string>
 
+#include <mm_malloc.h>
+
 template <typename T>
 struct edge_t {
   edge_t() {}

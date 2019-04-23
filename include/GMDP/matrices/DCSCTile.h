@@ -37,6 +37,8 @@
 #include <algorithm>
 #include <vector>
 
+#include <mm_malloc.h>
+
 template <typename T>
 bool compare_dcsc(const tedge_t<T> &a, const tedge_t<T> &b) {
   if (a.tile_id < b.tile_id)
